@@ -2,6 +2,9 @@ import './App.css'
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from './components/HomePage'
 import SimpleCalculator from './components/SimpleCalculator';
+import BMICalculator from './components/BMICalculator';
+import SIPCalculator from './components/SIPCalculator';
+import InterestCalculator from './components/InterestCalculator';
 
 function App() {
   return (

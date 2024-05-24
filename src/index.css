@@ -79,3 +79,22 @@ button:focus-visible {
   background-color: #1314156f;
   color:#868282;
 }
+
+.simple-calc-buttons{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.equal-button{
+  background-color: #213547;
+}
+
+.equal-button:hover{
+  border-color: #75c55d;
+}
+
+.simple-calc-input{
+  width: 200px;
+  height: 30px;
+}
+

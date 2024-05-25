@@ -9,18 +9,46 @@ function SimpleCalculator(){
 
 
     function handleNumber(e){
-        if(input=="+" || input=="-" || input=="*" || input=="/"){
-            setInput("")
-            
-        }
         setInput(input=>input+String(e.target.value))
+        console.log(input)
 
     }
 
     function handleOperator(e){
         const currOpr=e.target.value
+        let currentValue=input
+        console.log(input)
         setInput("")
-        setOpr(opr=>currOpr)
+        setOpr(e.target.value)
+        
+        let newResult=parseInt(result)
+        console.log(currentValue,currOpr,result)
+
+        if (result===null){
+            setResult(currentValue)
+            console.log(currentValue,currOpr,result)
+        }
+        else{
+            console.log(currOpr)
+        switch(currOpr){
+            case "+":
+                setResult(prevResult=>parseInt(prevResult)+parseInt(currentValue))
+                console.log(parseInt(result)+parseInt(currentValue))
+                break
+
+            case "*":
+                setResult(prevResult=>parseInt(prevResult)*parseInt(currentValue))
+                break
+
+            case "-":
+                setResult(prevResult=>parseInt(prevResult)-parseInt(currentValue))
+                break
+
+            case "/":
+                setResult(prevResult=>parseInt(prevResult)/parseInt(currentValue))
+                break
+        }
+    }  
     }
 
     function handleC(e){
@@ -28,7 +56,33 @@ function SimpleCalculator(){
     }
 
     function handleEquals(e){
-        
+        if(input.trim()!=="" && opr.trim()!==""){
+            switch(opr){
+                case "+":
+                    var finalResult = parseInt(result)+parseInt(input)
+                    break
+
+                case "*":
+                    var finalResult = parseInt(result)*parseInt(input)
+                    break
+                    
+                case "-":
+                    var finalResult = parseInt(result)-parseInt(input)
+                    break
+
+                case "/":
+                    var finalResult = parseInt(result)/parseInt(input)
+                    break
+
+                default:
+                    break
+            }
+                setInput(String(finalResult))
+                setOpr("")
+                setResult(null)
+
+ 
+        }
     }
     
         return(
@@ -42,7 +96,7 @@ function SimpleCalculator(){
             <div className="simple-calc-buttons">
             <button value="0" onClick={handleNumber}>0</button>
             <button value="C" onClick={handleC}>C</button>
-            <button value="^" onClick={handleOperator}>^</button>
+            <button value="/" onClick={handleOperator}>/</button>
             <button value="=" onClick={handleEquals} className="equal-button">=</button>
             </div>
             <div className="simple-calc-buttons">

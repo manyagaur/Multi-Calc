@@ -78,6 +78,7 @@ button:focus-visible {
   height:20vh;
   background-color: #1314156f;
   color:#868282;
+  font-size: 2vw;
 }
 
 .simple-calc-buttons{

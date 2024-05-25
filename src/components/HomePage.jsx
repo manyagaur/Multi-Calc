@@ -23,6 +23,8 @@ function HomePage(){
 
     return(
         <>
+        <h2>Calc It!</h2>
+        <h4>Complex calculations made easy...</h4><br></br><br></br>
         <div className="container">
         <button className="box" onClick={handleSimpleCButton}>Simple Calculator</button>
         <button className="box" onClick={handleBmiCButton}>BMI Calculator</button>

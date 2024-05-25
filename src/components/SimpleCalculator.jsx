@@ -53,6 +53,8 @@ function SimpleCalculator(){
 
     function handleC(e){
         setInput("")
+        setOpr("")
+        setResult("")
     }
 
     function handleEquals(e){

@@ -185,3 +185,57 @@ h4 {
     typewriter 4s steps(40) 1s 1 normal both,
     blink 500ms steps(40) infinite;
 }
+
+.bmi-chart{
+  display: flex;
+  justify-content: center;
+  border:solid  white 2px;
+  width:40vw;
+  height:50vh;
+}
+
+.bmi-indicator{
+  display: flex;
+  margin:30px;
+  height:1vh;
+  width:30vw;
+}
+
+.yellow{
+  background-color: yellow;
+  width:8vw;
+  height:1vh;
+}
+
+.green{
+    background-color: rgb(17, 234, 31);
+    width:8vw;
+    height:1vh;
+  }
+
+.orange{
+    background-color: rgb(234, 144, 17);
+    width:8vw;
+    height:1vh;
+  }
+
+.red{
+    background-color: rgb(237, 49, 11);
+    width:8vw;
+    height:1vh;
+  }
+
+.slider-class{
+  appearance: none;
+  background-color: #f3ef1e;
+
+}
+
+.slider-class::-webkit-slider-thumb {
+  appearance: none; 
+  width: 1vw; 
+  height: 2vh; 
+  border-radius: 0%; 
+  background: #ff041d; 
+  cursor: pointer;
+}

@@ -70,12 +70,12 @@ button:focus-visible {
 .container{
   display:grid;
   grid-template-columns: repeat(3,1fr);
-  gap:10vw; 
+  gap:10vh 5vw; 
 }
 
 .box{
   width:20vw;
-  height:20vh;
+  height:30vh;
   background-color: #1314156f;
   color:#d4d4d4;
   font-size: 2vw;
@@ -148,7 +148,7 @@ button:focus-visible {
 
 h2 {
   margin: auto;
-  font-size: 10vw;
+  font-size: 4vw;
   font-weight: 300;
   animation: lights 4s 550ms linear infinite;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -175,7 +175,7 @@ h2 {
 
 h4 {
   margin: auto;
-  font-size: 3vw;
+  font-size: 2vw;
   font-weight: 300;
   overflow: hidden;
   white-space: nowrap;

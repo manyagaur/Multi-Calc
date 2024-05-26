@@ -17,7 +17,6 @@ function SimpleCalculator(){
     function handleOperator(e){
         const currOpr=e.target.value
         let currentValue=input
-        console.log(input)
         setInput("")
         setOpr(e.target.value)
         
@@ -30,7 +29,7 @@ function SimpleCalculator(){
         }
         else{
             console.log(currOpr)
-        switch(currOpr){
+        switch(opr){
             case "+":
                 setResult(prevResult=>parseInt(prevResult)+parseInt(currentValue))
                 console.log(parseInt(result)+parseInt(currentValue))
@@ -77,13 +76,13 @@ function SimpleCalculator(){
                     break
 
                 default:
+                    var finalResult=result
                     break
             }
                 setInput(String(finalResult))
                 setOpr("")
                 setResult(null)
 
- 
         }
     }
     

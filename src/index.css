@@ -187,55 +187,33 @@ h4 {
 }
 
 .bmi-chart{
-  display: flex;
-  justify-content: center;
-  border:solid  white 2px;
-  width:40vw;
-  height:50vh;
+  border:solid  rgb(100, 100, 100) 2px;
+  width:50vw;
+  height:30vh;
 }
 
-.bmi-indicator{
-  display: flex;
-  margin:30px;
-  height:1vh;
-  width:30vw;
-}
-
-.yellow{
-  background-color: yellow;
-  width:8vw;
-  height:1vh;
-}
-
-.green{
-    background-color: rgb(17, 234, 31);
-    width:8vw;
-    height:1vh;
-  }
-
-.orange{
-    background-color: rgb(234, 144, 17);
-    width:8vw;
-    height:1vh;
-  }
-
-.red{
-    background-color: rgb(237, 49, 11);
-    width:8vw;
-    height:1vh;
-  }
-
-.slider-class{
+input[type='range'] {
+  -webkit-appearance: none;
   appearance: none;
-  background-color: #f3ef1e;
-
+  width: 30vw;
 }
 
-.slider-class::-webkit-slider-thumb {
-  appearance: none; 
-  width: 1vw; 
-  height: 2vh; 
-  border-radius: 0%; 
-  background: #ff041d; 
-  cursor: pointer;
+input[type='range']::-webkit-slider-runnable-track {
+  background-image: linear-gradient(
+    90deg,
+    yellow,  /* Yellow */
+    green,   /* Green */
+    orange,  /* Orange */
+    red      /* Red */
+  );
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+
+  
+  background-color: var(--primary-color);
+  height: 0.6rem;
+  width: 0.2rem;
+  background-color: black;
 }

@@ -95,28 +95,28 @@ function SimpleCalculator(){
             >
             </input>
             <div className="simple-calc-buttons">
-            <button value="0" onClick={handleNumber}>0</button>
-            <button value="C" onClick={handleC}>C</button>
-            <button value="/" onClick={handleOperator}>/</button>
+            <button className="calc-button" value="0" onClick={handleNumber}>0</button>
+            <button className="calc-button" value="C" onClick={handleC}>C</button>
+            <button className="calc-button" value="/" onClick={handleOperator}>/</button>
             <button value="=" onClick={handleEquals} className="equal-button">=</button>
             </div>
             <div className="simple-calc-buttons">
-            <button value="7" onClick={handleNumber}>7</button>
-            <button value="8" onClick={handleNumber}>8</button>
-            <button value="9" onClick={handleNumber}>9</button>
-            <button value="*" onClick={handleOperator}>*</button>
+            <button className="calc-button" value="7" onClick={handleNumber}>7</button>
+            <button className="calc-button" value="8" onClick={handleNumber}>8</button>
+            <button className="calc-button" value="9" onClick={handleNumber}>9</button>
+            <button className="calc-button" value="*" onClick={handleOperator}>*</button>
             </div>
             <div className="simple-calc-buttons">
-            <button value="4" onClick={handleNumber}>4</button>
-            <button value="5" onClick={handleNumber}>5</button>
-            <button value="6" onClick={handleNumber}>6</button>
-            <button value="-" onClick={handleOperator}>-</button>
+            <button className="calc-button" value="4" onClick={handleNumber}>4</button>
+            <button className="calc-button" value="5" onClick={handleNumber}>5</button>
+            <button className="calc-button" value="6" onClick={handleNumber}>6</button>
+            <button className="calc-button" value="-" onClick={handleOperator}>-</button>
             </div>
             <div className="simple-calc-buttons">
-            <button value="1" onClick={handleNumber}>1</button>
-            <button value="2" onClick={handleNumber}>2</button>
-            <button value="3" onClick={handleNumber}>3</button>
-            <button value="+" onClick={handleOperator}>+</button>
+            <button className="calc-button" value="1" onClick={handleNumber}>1</button>
+            <button className="calc-button" value="2" onClick={handleNumber}>2</button>
+            <button className="calc-button" value="3" onClick={handleNumber}>3</button>
+            <button className="calc-button" value="+" onClick={handleOperator}>+</button>
             </div>
             </>
         )

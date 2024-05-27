@@ -45,6 +45,7 @@ h1 {
   font-family: inherit;
   background-color: #060606;
   cursor: pointer;
+  color:#f9f9f9;
   transition: border-color 0.25s;
 }
 .calc-button:hover {

@@ -190,6 +190,21 @@ h2 {
   }
 }
 
+label{
+  color:white;
+}
+
+input{
+  background-color:#454545;
+  box-shadow: none;
+  border:none;
+  
+}
+
+input::placeholder{
+  color: #a9a9a9;
+}
+
 h4 {
   margin: auto;
   font-size: 2vw;
@@ -234,4 +249,10 @@ input[type='range']::-webkit-slider-thumb {
   height: 0.6rem;
   width: 0.2rem;
   background-color: black;
+}
+
+.calc-bmi-button{
+  background-color: #0b0b0b;
+  border-radius: 5px;
+
 }

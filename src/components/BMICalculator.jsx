@@ -56,7 +56,7 @@ function BMICalculator() {
         <input type="number" placeholder="(in kg)"  value={weight} onChange={handleWeight}/>
       </div><br />
       <button 
-          className="move-slider-btn" 
+          className="calc-bmi-button" 
           onClick={calcBmi}
         >
           Calculate BMI
